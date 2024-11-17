@@ -1,5 +1,7 @@
 package com.example.myapplication;
 
+import static android.widget.Toast.LENGTH_SHORT;
+
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -24,7 +26,7 @@ public class MainActivity2 extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        Toast.makeText(this, "You Reached the Second Activity Ahlaaaaaa",Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "You Reached the Second Activity Ahlaaaaaa", LENGTH_SHORT).show();
         TXT1=findViewById(R.id.TXT1);
         TXT2=findViewById(R.id.TXT2);
         TXT1.setText("YOU NAME IS:"+getIntent().getStringExtra("name"));
